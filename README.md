@@ -11,10 +11,14 @@ sls deploy --stage dev
 
 
 sls plugin search -q simulate
+
 sls plugin install -n serverless-plugin-simulate
+
 sls plugin install -n serverless-python-requirements
 
 
 #running
+
 sls simulate lambda -p 4000
+
 sls simulate apigateway -p 5003 --lambda-port 4000
